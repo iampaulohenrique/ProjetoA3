@@ -6,7 +6,7 @@ import tardezinha from '../assets/tardezinha.png';
 import supertenda from '../assets/supertenda.png';
 import quintauniversitaria from '../assets/quintauniversitaria.png';
 import festadobranco from '../assets/festadobranco.png';
-import sollune from '../assets/sollune.png';
+import sollune from '../assets/sollune.png';.
 import opensunset from '../assets/opensunset.jpg';
 import Cart from './Cart';
 
