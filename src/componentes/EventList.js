@@ -8,10 +8,11 @@ import quintauniversitaria from '../assets/quintauniversitaria.png';
 import festadobranco from '../assets/festadobranco.png';
 import sollune from '../assets/sollune.png';
 import opensunset from '../assets/opensunset.jpg';
+import Cart from './Cart';
 
 const EventList = () => {
   const events = [
-    { image: pagofunk, title: 'PAGOFUNK', location: 'Pacco Club', date: '19 de Abril' },
+    { image: pagofunk, title: 'PAGOFUNK', location: 'Pacco Club', date: '19 de Abril'},
     { image: mackejada, title: 'MACKEJADA', location: 'Club A', date: '19 de Abril' },
     { image: baileunip, title: 'BAILE UNIP', location: 'Expo Barra Funda', date: '19 de Abril' },
     { image: tardezinha, title: 'TARDEZINHA VIBES', location: 'Servus Beer', date: '20 de Abril' },
