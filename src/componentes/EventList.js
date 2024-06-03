@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import pagofunk from '../assets/pagofunk.jpg';
 import mackejada from '../assets/mackejada.png';
 import baileunip from '../assets/baileunip.jpg';
@@ -11,6 +11,7 @@ import opensunset from '../assets/opensunset.jpg';
 import Cart from './Cart';
 
 const EventList = () => {
+  const [cartItems, setCartItems] = useState([]);
   const events = [
     { image: pagofunk, title: 'PAGOFUNK', location: 'Pacco Club', date: '19 de Abril'},
     { image: mackejada, title: 'MACKEJADA', location: 'Club A', date: '19 de Abril' },
@@ -23,6 +24,11 @@ const EventList = () => {
     { image: opensunset, title: 'OPEN SUNSET', location: 'Double Deck', date: '20 de Abril' },
   ];
 
+  const handleAddToCart = (event, item) => {
+    event.preventDefault();
+    setCartItems([...cartItems, item]);
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -34,6 +40,7 @@ const EventList = () => {
                 <h5 className="card-title" style={{ fontWeight: 'bold' }}>{event.title}</h5>
                 <p className="card-text" style={{ marginBottom: '0.5rem' }}>{event.location}</p>
                 <p className="card-text">{event.date}</p>
+                <button onClick={(e) => handleAddToCart(e, event)}>Adicionar ao Carrinho</button>
               </div>
             </div>
           </div>

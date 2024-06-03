@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
 import baileunip from '../assets/baileunip.jpg';
 import quintauniversitaria from '../assets/quintauniversitaria.png';
 import mackejada from '../assets/mackejada.png'
@@ -28,7 +28,7 @@ const Cart = () => {
               <p>BAILE UNIP</p>
               <p>Qtde: {baileUnipQty}</p>
               <p>Valor: R$ {baileUnipPrice}</p>
-              <p>Sub-Total: R$ calculateTotal(baileUnipQty, baileUnipPrice)</p>
+              <p>Sub-Total: R$ {calculateTotal(baileUnipQty, baileUnipPrice)}</p>
             </div>
           </div>
           <div className="cart-buttons d-flex align-items-center">
