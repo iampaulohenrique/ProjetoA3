@@ -147,3 +147,14 @@ a::after {
 a:hover::after {
   transform: scaleX(1); /* Aumenta a largura do sublinhado ao passar o mouse */
 }
+
+/* Botão de filtro do EventList */
+.filtro-botao {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
