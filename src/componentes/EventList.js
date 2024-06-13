@@ -64,7 +64,7 @@ const EventList = ({ onAddToCart }) => {
           <Modal.Body>
             <Form>
               <Form.Group controlId="dateFilter">
-                <Form.Label>Filtrar por Data</Form.Label>
+                <Form.Label>Data</Form.Label>
                 <Form.Control 
                   type="date" 
                   name="date"
@@ -73,7 +73,7 @@ const EventList = ({ onAddToCart }) => {
                 />
               </Form.Group>
               <Form.Group controlId="singerFilter">
-                <Form.Label>Filtrar por Cantor</Form.Label>
+                <Form.Label>Cantor</Form.Label>
                 <Form.Control 
                   type="text" 
                   name="singer"
@@ -83,7 +83,7 @@ const EventList = ({ onAddToCart }) => {
                 />
               </Form.Group>
               <Form.Group controlId="genreFilter">
-                <Form.Label>Filtrar por Estilo Musical</Form.Label>
+                <Form.Label>Estilo musical</Form.Label>
                 <Form.Control 
                   type="text" 
                   name="genre"
