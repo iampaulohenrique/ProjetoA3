@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Registro.css';
 
 const Registro = () => {
+  const [nome, setNome] = useState('')
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -16,7 +17,7 @@ const Registro = () => {
       alert('As senhas não coincidem');
       return;
     }
-    console.log('Registro realizado com:', { email, password, cpf, birthdate });
+    console.log('Registro realizado com:', { nome, email, password, cpf, birthdate });
     navigate('/login'); // Redireciona para a página de login após o registro
   };
 
@@ -24,6 +25,15 @@ const Registro = () => {
     <div className="registro-container">
       <h2>Registro</h2>
       <form onSubmit={handleRegister}>
+        <div>
+          <label>Nome:</label>
+          <input
+            type="text"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            required
+          />
+        </div>
         <div>
           <label>Email:</label>
           <input
