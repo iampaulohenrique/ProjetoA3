@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Dropdown, DropdownButton, Form, Button, Modal } from 'react-bootstrap';
+import { Form, Button, Modal } from 'react-bootstrap'; // Removi Dropdown e DropdownButton aqui
 import pagofunk from '../assets/pagofunk.jpg';
 import mackejada from '../assets/mackejada.png';
 import baileunip from '../assets/baileunip.jpg';

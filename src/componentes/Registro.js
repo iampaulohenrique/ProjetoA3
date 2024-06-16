@@ -6,6 +6,8 @@ const Registro = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [cpf, setCPF] = useState('');
+  const [birthdate, setBirthdate] = useState('');
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
@@ -14,7 +16,7 @@ const Registro = () => {
       alert('As senhas não coincidem');
       return;
     }
-    console.log('Registro realizado com:', { email, password });
+    console.log('Registro realizado com:', { email, password, cpf, birthdate });
     navigate('/login'); // Redireciona para a página de login após o registro
   };
 
@@ -28,6 +30,15 @@ const Registro = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>CPF:</label>
+          <input
+            type="text"
+            value={cpf}
+            onChange={(e) => setCPF(e.target.value)}
             required
           />
         </div>
@@ -46,6 +57,16 @@ const Registro = () => {
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+        </div>
+     
+        <div>
+          <label>Data de Nascimento:</label>
+          <input
+            type="date"
+            value={birthdate}
+            onChange={(e) => setBirthdate(e.target.value)}
             required
           />
         </div>
